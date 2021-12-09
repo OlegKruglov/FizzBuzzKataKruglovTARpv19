@@ -6,18 +6,8 @@ import org.junit.jupiter.api.Test;
 
 class FizzBuzzTests {
 
-	@BeforeEach
-	void setUp() throws Exception {
-	}
-
-	@AfterEach
-	void tearDown() throws Exception {
-	}
-
-	@Test
-	void shouldReturn100() {
-		FizzBuzz fb=new FizzBuzz();
-		assertEquals(100, fb.getNumbers().length);
-	}
+	public void shouldReturn100() {
+        assertEquals(FizzBuzz.of(0), ("0"));
+    }
 
 }
