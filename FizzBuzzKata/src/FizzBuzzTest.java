@@ -9,5 +9,9 @@ class FizzBuzzTests {
 	public void shouldReturn100() {
         assertEquals(FizzBuzz.of(0), ("0"));
     }
+	
+	public void multipleOfThreeReturnFizz(){
+        assertEquals(FizzBuzz.of(3), ("Fizz"));
+    }
 
 }
