@@ -6,11 +6,11 @@ public class FizzBuzz {
         }
     }
 
-    public static String of(int i) {
-    	if(i % 5 == 0 && i % 3 == 0) return "FizzBuzz";
-    	if(i % 3 == 0) return "Fizz";
-    	if(i % 5 == 0) return "Buzz";
-        return String.valueOf(i);
+    public static String of(int number) {
+    	if(number % 5 == 0 && number % 3 == 0) return "FizzBuzz";
+    	if(number % 3 == 0) return "Fizz";
+    	if(number % 5 == 0) return "Buzz";
+        return String.valueOf(number);
     }
     
     
