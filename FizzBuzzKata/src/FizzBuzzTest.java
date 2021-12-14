@@ -6,18 +6,20 @@ import org.junit.jupiter.api.Test;
 
 class FizzBuzzTests {
 
-	@BeforeEach
-	void setUp() throws Exception {
-	}
-
-	@AfterEach
-	void tearDown() throws Exception {
-	}
-
-	@Test
-	void shouldReturn100() {
-		FizzBuzz fb=new FizzBuzz();
-		assertEquals(100, fb.getNumbers().length);
-	}
+	public void IfZeroReturnZero() {
+        assertEquals(FizzBuzz.of(0), ("0"));
+    }
+	
+	public void multipleOfThreeReturnFizz(){
+        assertEquals(FizzBuzz.of(3), "Fizz");
+    }
+	
+	public void multipleOfFiveReturnBuzz(){
+        assertEquals(FizzBuzz.of(5), "Buzz");
+    }
+	
+	public void multipleOfFiveAndThreeReturnFizzBuzz(){
+        assertEquals(FizzBuzz.of(15), "FizzBuzz");
+    }
 
 }
