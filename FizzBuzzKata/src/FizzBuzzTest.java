@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 class FizzBuzzTests {
 
-	public void printNumbersFrom1To100() {
+	public void IfZeroReturnZero() {
         assertEquals(FizzBuzz.of(0), ("0"));
     }
 	
